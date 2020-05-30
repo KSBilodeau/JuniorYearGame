@@ -1,0 +1,106 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=11.0
+    os=Macos
+
+[requires]
+    libpng/1.Y.Z
+    sdl2/2.Y.Z
+    sdl2_image/2.Y.Z
+    sdl2_ttf/2.Y.Z
+    zlib/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=11.0
+    os=Macos
+    os_build=Macos
+
+[full_requires]
+    bzip2/1.0.6@conan/stable:32bef4803d4b079e983ecb27f105881e778bc5a7
+    freetype/2.9.1@bincrafters/stable:9fbc622fdb9d2462147cf446a56b1688bf016d05
+    jbig/20160605:f74366f76f700cc6e991285892ad7a23c30e6d47
+    libiconv/1.16:f74366f76f700cc6e991285892ad7a23c30e6d47
+    libjpeg/9c:f74366f76f700cc6e991285892ad7a23c30e6d47
+    libpng/1.6.37:eb50d18a5a5d59bd0c332464a4c348ab65e353bf
+    libtiff/4.0.9:e2437fae996773a64f3ef1bf3d1a754a09fa33a4
+    libwebp/1.0.3:925627bb9faa4169b8ec3d0d66343ea8295547e5
+    sdl2/2.0.12@bincrafters/stable:f616f9b5a0baa5206386ecbf818542a65bd9a834
+    sdl2_image/2.0.5@bincrafters/stable:3e7f1b8629b2e18d2ec985852e551163d405f19a
+    sdl2_ttf/2.0.15@bincrafters/stable:e6ad2b38a86a9ecfd0a7149f2bf928a1a31aa7f2
+    xz_utils/5.2.4:f74366f76f700cc6e991285892ad7a23c30e6d47
+    zlib/1.2.11:f74366f76f700cc6e991285892ad7a23c30e6d47
+
+[full_options]
+    bzip2:build_executable=True
+    bzip2:fPIC=True
+    bzip2:shared=False
+    freetype:fPIC=True
+    freetype:shared=False
+    freetype:with_bzip2=True
+    freetype:with_png=True
+    freetype:with_zlib=True
+    jbig:fPIC=True
+    jbig:shared=False
+    libiconv:fPIC=True
+    libiconv:shared=False
+    libjpeg:fPIC=True
+    libjpeg:shared=False
+    libpng:api_prefix=None
+    libpng:fPIC=True
+    libpng:shared=False
+    libtiff:fPIC=True
+    libtiff:jbig=True
+    libtiff:jpeg=True
+    libtiff:lzma=True
+    libtiff:shared=False
+    libtiff:zlib=True
+    libwebp:fPIC=True
+    libwebp:near_lossless=True
+    libwebp:shared=False
+    libwebp:swap_16bit_csp=False
+    libwebp:with_simd=True
+    sdl2:fPIC=True
+    sdl2:iconv=True
+    sdl2:sdl2main=True
+    sdl2:shared=False
+    sdl2_image:bmp=True
+    sdl2_image:fPIC=True
+    sdl2_image:gif=True
+    sdl2_image:imageio=False
+    sdl2_image:jpg=True
+    sdl2_image:lbm=True
+    sdl2_image:pcx=True
+    sdl2_image:png=True
+    sdl2_image:pnm=True
+    sdl2_image:shared=False
+    sdl2_image:svg=True
+    sdl2_image:tga=True
+    sdl2_image:tif=True
+    sdl2_image:webp=True
+    sdl2_image:xcf=True
+    sdl2_image:xpm=True
+    sdl2_image:xv=True
+    sdl2_ttf:fPIC=True
+    sdl2_ttf:shared=False
+    xz_utils:fPIC=True
+    xz_utils:shared=False
+    zlib:fPIC=True
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+

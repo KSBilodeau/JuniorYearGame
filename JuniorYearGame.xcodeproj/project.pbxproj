@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		863084EF2481C52200693B0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 863084EE2481C52200693B0D /* main.cpp */; };
+		8667EF5C2481F495001BC207 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667EF5A2481F495001BC207 /* application.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,14 @@
 /* Begin PBXFileReference section */
 		863084EB2481C52200693B0D /* JuniorYearGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JuniorYearGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		863084EE2481C52200693B0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8667EF5A2481F495001BC207 /* application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = application.cpp; sourceTree = "<group>"; };
+		8667EF5B2481F495001BC207 /* application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = application.hpp; sourceTree = "<group>"; };
+		8667EF5E2481FA0D001BC207 /* conanFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conanFile.txt; sourceTree = "<group>"; };
+		8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
+		8667EF612481FCD0001BC207 /* conan.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conan.lock; sourceTree = "<group>"; };
+		8667EF622481FCD0001BC207 /* conanbuildinfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conanbuildinfo.txt; sourceTree = "<group>"; };
+		8667EF632481FCD0001BC207 /* conaninfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conaninfo.txt; sourceTree = "<group>"; };
+		8667EF642481FCD0001BC207 /* graph_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = graph_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,25 @@
 		863084ED2481C52200693B0D /* JuniorYearGame */ = {
 			isa = PBXGroup;
 			children = (
+				8667EF5F2481FA13001BC207 /* conanFiles */,
 				863084EE2481C52200693B0D /* main.cpp */,
+				8667EF5A2481F495001BC207 /* application.cpp */,
+				8667EF5B2481F495001BC207 /* application.hpp */,
 			);
 			path = JuniorYearGame;
+			sourceTree = "<group>";
+		};
+		8667EF5F2481FA13001BC207 /* conanFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8667EF612481FCD0001BC207 /* conan.lock */,
+				8667EF622481FCD0001BC207 /* conanbuildinfo.txt */,
+				8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */,
+				8667EF632481FCD0001BC207 /* conaninfo.txt */,
+				8667EF642481FCD0001BC207 /* graph_info.json */,
+				8667EF5E2481FA0D001BC207 /* conanFile.txt */,
+			);
+			path = conanFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8667EF5C2481F495001BC207 /* application.cpp in Sources */,
 				863084EF2481C52200693B0D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +154,7 @@
 /* Begin XCBuildConfiguration section */
 		863084F02481C52200693B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -186,6 +213,7 @@
 		};
 		863084F12481C52200693B0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -237,6 +265,7 @@
 		};
 		863084F32481C52200693B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K965454LM2;
@@ -247,6 +276,7 @@
 		};
 		863084F42481C52200693B0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K965454LM2;

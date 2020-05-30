@@ -1,0 +1,101 @@
+{
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=11.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "pref": null,
+    "options": "bzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\njbig:fPIC=True\njbig:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nsdl2_image:bmp=True\nsdl2_image:fPIC=True\nsdl2_image:gif=True\nsdl2_image:imageio=False\nsdl2_image:jpg=True\nsdl2_image:lbm=True\nsdl2_image:pcx=True\nsdl2_image:png=True\nsdl2_image:pnm=True\nsdl2_image:shared=False\nsdl2_image:svg=True\nsdl2_image:tga=True\nsdl2_image:tif=True\nsdl2_image:webp=True\nsdl2_image:xcf=True\nsdl2_image:xpm=True\nsdl2_image:xv=True\nsdl2_ttf:fPIC=True\nsdl2_ttf:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "3",
+     "5",
+     "8"
+    ],
+    "path": "/Users/ksbilodeau/Desktop/Xcode Projects/JuniorYearGame/JuniorYearGame/conanFiles/conanfile.txt"
+   },
+   "1": {
+    "pref": "libpng/1.6.37#0:eb50d18a5a5d59bd0c332464a4c348ab65e353bf#0",
+    "options": "api_prefix=None\nfPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "2"
+    ]
+   },
+   "2": {
+    "pref": "zlib/1.2.11#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nminizip=False\nshared=False"
+   },
+   "3": {
+    "pref": "sdl2/2.0.12@bincrafters/stable#0:f616f9b5a0baa5206386ecbf818542a65bd9a834#0",
+    "options": "fPIC=True\niconv=True\nsdl2main=True\nshared=False\nlibiconv:fPIC=True\nlibiconv:shared=False",
+    "requires": [
+     "4"
+    ]
+   },
+   "4": {
+    "pref": "libiconv/1.16#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "5": {
+    "pref": "sdl2_ttf/2.0.15@bincrafters/stable#0:e6ad2b38a86a9ecfd0a7149f2bf928a1a31aa7f2#78a8bfd1e0cabff099d580dd251188bf",
+    "options": "fPIC=True\nshared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "6",
+     "3"
+    ]
+   },
+   "6": {
+    "pref": "freetype/2.9.1@bincrafters/stable#0:9fbc622fdb9d2462147cf446a56b1688bf016d05#cac9723f31dfd6c84a1f98e8d17c6da1",
+    "options": "fPIC=True\nshared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "7"
+    ]
+   },
+   "7": {
+    "pref": "bzip2/1.0.6@conan/stable#0:32bef4803d4b079e983ecb27f105881e778bc5a7#78fe6dab997280d77f4c12a42d7a4f9f",
+    "options": "build_executable=True\nfPIC=True\nshared=False"
+   },
+   "8": {
+    "pref": "sdl2_image/2.0.5@bincrafters/stable#0:3e7f1b8629b2e18d2ec985852e551163d405f19a#2ff2300c380b3d7b8fd06eaa2625e299",
+    "options": "bmp=True\nfPIC=True\ngif=True\nimageio=False\njpg=True\nlbm=True\npcx=True\npng=True\npnm=True\nshared=False\nsvg=True\ntga=True\ntif=True\nwebp=True\nxcf=True\nxpm=True\nxv=True\njbig:fPIC=True\njbig:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "3",
+     "9",
+     "11",
+     "1",
+     "13",
+     "2"
+    ]
+   },
+   "9": {
+    "pref": "libtiff/4.0.9#0:e2437fae996773a64f3ef1bf3d1a754a09fa33a4#b6b9059c01007fec0d55cd5d093b89a1",
+    "options": "fPIC=True\njbig=True\njpeg=True\nlzma=True\nshared=False\nzlib=True\njbig:fPIC=True\njbig:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "2",
+     "10",
+     "11",
+     "12"
+    ]
+   },
+   "10": {
+    "pref": "xz_utils/5.2.4#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "11": {
+    "pref": "libjpeg/9c#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "12": {
+    "pref": "jbig/20160605#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "13": {
+    "pref": "libwebp/1.0.3#0:925627bb9faa4169b8ec3d0d66343ea8295547e5#0",
+    "options": "fPIC=True\nnear_lossless=True\nshared=False\nswap_16bit_csp=False\nwith_simd=True"
+   }
+  }
+ },
+ "version": "0.3"
+}
