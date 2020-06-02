@@ -47,8 +47,8 @@ private:
     ///@brief A pointer to the SDL Window object, representing the application's window
     std::unique_ptr<SDL_Window, void(*)(SDL_Window*)> mWindow;
     
-    ///@brief A pointer to the SDL Renderer object, representing the application's low level renderer
-    std::unique_ptr<SDL_Renderer, void(*)(SDL_Renderer*)> mRenderer;
+    ///@brief A shared pointer to the SDL renderer that can be shared to game object render components
+    std::shared_ptr<SDL_Renderer> mRenderer;
 };
 
 #endif /* application_hpp */

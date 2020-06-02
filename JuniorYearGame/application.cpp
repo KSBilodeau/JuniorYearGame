@@ -8,9 +8,15 @@
 
 #include "application.hpp"
 
+#include <chrono>
+#include <iostream>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 #include <stdexcept>
+
+#include "gameObject.hpp"
+
+using namespace std::chrono;
 
 Application::Application() : mWindow(nullptr, [](SDL_Window* window){SDL_DestroyWindow(window);}), mRenderer(nullptr, [](SDL_Renderer* renderer){SDL_DestroyRenderer(renderer);}), isRunning(true)
 {
@@ -57,7 +63,7 @@ bool Application::init()
         else
         {
             // Creates SDL renderer as a unique pointer with a custom deleter
-            mRenderer = std::unique_ptr<SDL_Renderer, void(*)(SDL_Renderer*)>(SDL_CreateRenderer(mWindow.get(), -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC), [](SDL_Renderer* renderer){SDL_DestroyRenderer(renderer);});
+            mRenderer = std::shared_ptr<SDL_Renderer>(SDL_CreateRenderer(mWindow.get(), -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC), [](SDL_Renderer* renderer){SDL_DestroyRenderer(renderer);});
             if (mRenderer == nullptr)
             {
                 printf("Renderer could not be created! SDL Error: %s\n", SDL_GetError());
@@ -111,9 +117,18 @@ void Application::run()
     // Variable for interfacing with SDL's event system
     SDL_Event event;
     
+    std::unique_ptr<GameObject<PlayerData>> player = std::make_unique<GameObject<PlayerData>>(GameObject<PlayerData>::createPlayer(new PlayerInputComponent, new PlayerRenderComponent, new PlayerData({0, 0, 100, 100})));
+    
+    auto previous = high_resolution_clock::now();
+    double lag = 0.0;
     // Main game loop
     while (isRunning)
     {
+        auto current = high_resolution_clock::now();
+        auto elapsed = duration_cast<milliseconds>(current - previous).count();
+        previous = current;
+        lag += elapsed;
+        
         // Processes the most recent input
         while (SDL_PollEvent(&event))
         {
@@ -124,12 +139,23 @@ void Application::run()
                 isRunning = false;
         }
         
+        std::cout << (std::to_string(elapsed) + "\n");
+        while (lag >= 16.0)
+        {
+            player->update(event);
+            lag -= 16.0;
+        }
+        
         // Set the right draw color and clear the screen
         SDL_SetRenderDrawColor(mRenderer.get(), 0xFF, 0xFF, 0xFF, 0xFF);
         SDL_RenderClear(mRenderer.get());
+        
+        player->render(mRenderer);
         
         // Renders the current buffer to the screen and then clears the buffer
         SDL_RenderPresent(mRenderer.get());
         SDL_RenderClear(mRenderer.get());
     }
+    
+    cleanup();
 }

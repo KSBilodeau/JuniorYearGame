@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>736E696F-621A-4846-8F73-9097A7EAC91C</key>
+		<key>9D32E286-EA67-4739-9A2A-14DD6BA44FBB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>736E696F-621A-4846-8F73-9097A7EAC91C.xcactivitylog</string>
+			<string>9D32E286-EA67-4739-9A2A-14DD6BA44FBB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>JuniorYearGame-dgvyzedniwldjmewmhnqjyhqmjld</string>
 			<key>timeStartedRecording</key>
-			<real>612506216.31821799</real>
+			<real>612832301.88085496</real>
 			<key>timeStoppedRecording</key>
-			<real>612506217.04530799</real>
+			<real>612832302.91724598</real>
 			<key>title</key>
 			<string>Build target JuniorYearGame</string>
 			<key>uniqueIdentifier</key>
-			<string>736E696F-621A-4846-8F73-9097A7EAC91C</string>
+			<string>9D32E286-EA67-4739-9A2A-14DD6BA44FBB</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
