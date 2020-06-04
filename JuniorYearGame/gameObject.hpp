@@ -13,146 +13,45 @@
 #include <SDL.h>
 #include <stdio.h>
 
-struct B
-{
-    int someData;
-};
-
-template<typename Type>
-class A
-{
-public:
-    template<typename T>
-    A<T>(T* MEM) : mem(MEM) {}
-    
-    static A<B>* createA(B* newMem)
-    {
-        return new A<B>(newMem);
-    }
-    
-    std::shared_ptr<Type> &getData()
-    {
-        return mem;
-    }
-    
-private:
-    std::shared_ptr<Type> mem;
-};
-
-template<typename RenderableType>
-class RenderComponent;
-class PlayerRenderComponent;
-template<typename UpdatableType>
-class InputComponent;
-class PlayerInputComponent;
-
-class ObjectData;
-class PlayerData;
+#include "gameComponents.hpp"
 
 template<typename ObjectType>
 class GameObject
 {
 public:
-    template<typename GenType>
-    GameObject<GenType>(GameObject<GenType>* moveObject) : mObjectData(std::move(moveObject->mObjectData)), mInputComponent(std::move(moveObject->mInputComponent)), mRenderComponent(std::move(moveObject->mRenderComponent))
+    static std::unique_ptr<GameObject<PlayerData>> createPlayer(std::shared_ptr<SDL_Renderer> &renderer, SDL_Event &event, PlayerData* data)
     {
-        delete moveObject;
-        moveObject = nullptr;
-    }
-    
-    static GameObject<PlayerData> createPlayer(PlayerInputComponent* iComponent, PlayerRenderComponent* rComponent, PlayerData* objectData)
-    {
-        return new GameObject(iComponent, rComponent, objectData);
+        return std::unique_ptr<GameObject<PlayerData>>(new GameObject<PlayerData>(new PlayerMoveComponent, new PlayerInputComponent, new PlayerRenderComponent, data, renderer, event));
     }
     
     void update(SDL_Event &event)
     {
-        mInputComponent->update(mObjectData, event);
+        mInputComponent->update(event);
     }
     
-    void render(std::shared_ptr<SDL_Renderer> &renderer)
+    void move(float delta = 1.0f)
     {
-        mRenderComponent->update(mObjectData, renderer);
+        mMoveComponent->update(delta);
+    }
+    
+    void render()
+    {
+        mRenderComponent->update();
     }
     
 private:
     template<typename GenType>
-    GameObject<GenType>(InputComponent<GenType>* input, RenderComponent<GenType>* render, GenType* objectData) : mInputComponent(input), mRenderComponent(render), mObjectData(objectData)
+    GameObject<GenType>(MoveComponent<GenType>* move, InputComponent<GenType>* input, RenderComponent<GenType>* render, GenType* objectData, std::shared_ptr<SDL_Renderer> &renderer, SDL_Event &event) : mMoveComponent(move), mInputComponent(input), mRenderComponent(render), mObjectData(objectData)
     {
-        
+        MoveComponent<GenType>::attach(mObjectData);
+        InputComponent<GenType>::attach(mObjectData);
+        RenderComponent<GenType>::attach(renderer, mObjectData);
     }
     
     std::shared_ptr<ObjectType> mObjectData;
+    std::unique_ptr<MoveComponent<ObjectType>> mMoveComponent;
     std::unique_ptr<InputComponent<ObjectType>> mInputComponent;
     std::unique_ptr<RenderComponent<ObjectType>> mRenderComponent;
-};
-
-template<typename RenderableType>
-class RenderComponent
-{
-public:
-    virtual ~RenderComponent() {}
-    
-    virtual void update(std::shared_ptr<RenderableType> &objectData, std::shared_ptr<SDL_Renderer> &renderer) = 0;
-};
-
-class PlayerRenderComponent : public RenderComponent<PlayerData>
-{
-public:
-    virtual ~PlayerRenderComponent() {}
-    
-    virtual void update(std::shared_ptr<PlayerData> &objectData, std::shared_ptr<SDL_Renderer> &renderer) override;
-};
-
-template<typename UpdatableType>
-class InputComponent
-{
-public:
-    virtual ~InputComponent() {}
-    
-    virtual void update(std::shared_ptr<UpdatableType> &objectData, SDL_Event &event) = 0;
-};
-
-class PlayerInputComponent : public InputComponent<PlayerData>
-{
-public:
-    virtual ~PlayerInputComponent() override
-    {
-        
-    }
-    
-    virtual void update(std::shared_ptr<PlayerData> &objectData, SDL_Event &event) override;
-};
-
-class ObjectData
-{
-public:
-    virtual ~ObjectData() {};
-    
-    virtual int getID() = 0;
-};
-
-class PlayerData : ObjectData
-{
-public:
-    PlayerData(SDL_Rect startingRect, int xVel = 0, int yVel = 0) : mPlayerRect(startingRect), xVelocity(xVel), yVelocity(yVel)
-    {
-        
-    }
-    
-    virtual ~PlayerData() override
-    {
-        
-    }
-    
-    virtual int getID() override
-    {
-        return 0;
-    }
-    
-    SDL_Rect mPlayerRect;
-    
-    int xVelocity, yVelocity;
 };
 
 #endif /* gameObject_hpp */

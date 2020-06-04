@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		863084EF2481C52200693B0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 863084EE2481C52200693B0D /* main.cpp */; };
+		864B2BBA248824B60062F141 /* gameComponents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 864B2BB8248824B60062F141 /* gameComponents.cpp */; };
 		8667EF5C2481F495001BC207 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667EF5A2481F495001BC207 /* application.cpp */; };
 		8667EF6A24830FFE001BC207 /* gameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667EF6824830FFE001BC207 /* gameObject.cpp */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		863084EB2481C52200693B0D /* JuniorYearGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JuniorYearGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		863084EE2481C52200693B0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		864B2BB8248824B60062F141 /* gameComponents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameComponents.cpp; sourceTree = "<group>"; };
+		864B2BB9248824B60062F141 /* gameComponents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameComponents.hpp; sourceTree = "<group>"; };
 		8667EF5A2481F495001BC207 /* application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = application.cpp; sourceTree = "<group>"; };
 		8667EF5B2481F495001BC207 /* application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = application.hpp; sourceTree = "<group>"; };
 		8667EF5E2481FA0D001BC207 /* conanFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conanFile.txt; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				8667EF5B2481F495001BC207 /* application.hpp */,
 				8667EF6824830FFE001BC207 /* gameObject.cpp */,
 				8667EF6924830FFE001BC207 /* gameObject.hpp */,
+				864B2BB8248824B60062F141 /* gameComponents.cpp */,
+				864B2BB9248824B60062F141 /* gameComponents.hpp */,
 			);
 			path = JuniorYearGame;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				8667EF5C2481F495001BC207 /* application.cpp in Sources */,
 				8667EF6A24830FFE001BC207 /* gameObject.cpp in Sources */,
 				863084EF2481C52200693B0D /* main.cpp in Sources */,
+				864B2BBA248824B60062F141 /* gameComponents.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

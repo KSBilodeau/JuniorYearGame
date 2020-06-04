@@ -117,7 +117,7 @@ void Application::run()
     // Variable for interfacing with SDL's event system
     SDL_Event event;
     
-    std::unique_ptr<GameObject<PlayerData>> player = std::make_unique<GameObject<PlayerData>>(GameObject<PlayerData>::createPlayer(new PlayerInputComponent, new PlayerRenderComponent, new PlayerData({0, 0, 100, 100})));
+    std::unique_ptr<GameObject<PlayerData>> player = GameObject<PlayerData>::createPlayer(mRenderer, event, new PlayerData{{0, 0, 100, 100}, 0, 0});
     
     auto previous = high_resolution_clock::now();
     double lag = 0.0;
@@ -137,24 +137,31 @@ void Application::run()
                 isRunning = false;
             else if (event.type == SDL_KEYDOWN && event.key.keysym.scancode == SDL_SCANCODE_ESCAPE)
                 isRunning = false;
+            
+            player->update(event);
         }
         
-        std::cout << (std::to_string(elapsed) + "\n");
+        std::cout << std::to_string(lag) << " " << std::to_string(elapsed) + "\n";
         while (lag >= 16.0)
         {
-            player->update(event);
             lag -= 16.0;
+            player->move(1.0f + (lag / 16.0f));
         }
+        std::cout << "Lag: " << std::to_string(lag) << std::endl;
         
         // Set the right draw color and clear the screen
-        SDL_SetRenderDrawColor(mRenderer.get(), 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_SetRenderDrawColor(mRenderer.get(), 0, 0, 0, 0xFF);
         SDL_RenderClear(mRenderer.get());
         
-        player->render(mRenderer);
+        player->move(1.0f + (lag / 16.0f));
+        lag = 0;
+        player->render();
         
         // Renders the current buffer to the screen and then clears the buffer
         SDL_RenderPresent(mRenderer.get());
         SDL_RenderClear(mRenderer.get());
+        
+        nanosleep((const struct timespec[]){0, 500000L}, NULL);
     }
     
     cleanup();
