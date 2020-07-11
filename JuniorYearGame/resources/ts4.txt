@@ -1,0 +1,5 @@
+UNISEQUENCE FILE
+SEQUENCE START 1
+"Use W, A, S, or D to move! [CLICK TO CONTINUE]"
+"Follow the path and run into the signs to complete the demo! [CLICK TO END DIALOUGE]"
+SEQUENCE END 1

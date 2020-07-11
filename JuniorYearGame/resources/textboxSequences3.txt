@@ -1,0 +1,9 @@
+UNISEQUENCE FILE
+SEQUENCE START 1
+"The red rectangle above is an enemy! [CLICK TO CONTINUE]"
+"Select your discus using the target button in the top left and hit the enemy 4 times. [CLICK WHEN DONE]"
+"Good Job! Now click the target button again and hit the enemy again 4 times. [CLICK WHEN DONE]"
+"Congratulations on beating your first enemy.  With that, this game demo is over.  Keep in mind this only gives an idea of what the engine can do and not what the entire game will be. [CLICK TO CONTINUE]"
+"I hope you enjoyed, and feel free to mess around however you'd like to! [CLICK TO COMPLETE DIALOUGE]"
+SEQUENCE END 1
+

@@ -7,39 +7,168 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		863084EF2481C52200693B0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 863084EE2481C52200693B0D /* main.cpp */; };
-		864B2BBA248824B60062F141 /* gameComponents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 864B2BB8248824B60062F141 /* gameComponents.cpp */; };
-		8667EF5C2481F495001BC207 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667EF5A2481F495001BC207 /* application.cpp */; };
-		8667EF6A24830FFE001BC207 /* gameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8667EF6824830FFE001BC207 /* gameObject.cpp */; };
+		86D4C13424B94670001EA697 /* magicBoomerang.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C10D24B9466E001EA697 /* magicBoomerang.cpp */; };
+		86D4C13524B94670001EA697 /* textureWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C10E24B9466E001EA697 /* textureWrapper.cpp */; };
+		86D4C13624B94670001EA697 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C10F24B9466E001EA697 /* sprite.cpp */; };
+		86D4C13724B94670001EA697 /* textboxProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11024B9466E001EA697 /* textboxProcessor.cpp */; };
+		86D4C13824B94670001EA697 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11224B9466E001EA697 /* player.cpp */; };
+		86D4C13924B94670001EA697 /* keyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11324B9466E001EA697 /* keyHandler.cpp */; };
+		86D4C13A24B94670001EA697 /* textureHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11924B9466F001EA697 /* textureHandler.cpp */; };
+		86D4C13B24B94670001EA697 /* enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11A24B9466F001EA697 /* enemy.cpp */; };
+		86D4C13C24B94670001EA697 /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11B24B9466F001EA697 /* gui.cpp */; };
+		86D4C13D24B94670001EA697 /* clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11C24B9466F001EA697 /* clock.cpp */; };
+		86D4C13E24B94670001EA697 /* gameEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C11E24B9466F001EA697 /* gameEventHandler.cpp */; };
+		86D4C13F24B94670001EA697 /* guiButtons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C12024B9466F001EA697 /* guiButtons.cpp */; };
+		86D4C14024B94670001EA697 /* textbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C12224B9466F001EA697 /* textbox.cpp */; };
+		86D4C14124B94670001EA697 /* spritesheet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C12424B9466F001EA697 /* spritesheet.cpp */; };
+		86D4C14224B94670001EA697 /* tileCollisionProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C12924B94670001EA697 /* tileCollisionProcessor.cpp */; };
+		86D4C14324B94670001EA697 /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C12D24B94670001EA697 /* block.cpp */; };
+		86D4C14424B94670001EA697 /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C13124B94670001EA697 /* tile.cpp */; };
+		86D4C14524B94670001EA697 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C13224B94670001EA697 /* main.cpp */; };
+		86D4C14624B94670001EA697 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C13324B94670001EA697 /* map.cpp */; };
+		86D4C16224B946EE001EA697 /* Angel_Music.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15124B946C4001EA697 /* Angel_Music.wav */; };
+		86D4C16324B946EE001EA697 /* Azalean_Hymn.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15824B946C5001EA697 /* Azalean_Hymn.wav */; };
+		86D4C16424B946EE001EA697 /* background.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15224B946C5001EA697 /* background.png */; };
+		86D4C16524B946EE001EA697 /* Batlle_of_the_Heavens.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15B24B946C5001EA697 /* Batlle_of_the_Heavens.wav */; };
+		86D4C16624B946EE001EA697 /* DejaVuSans.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15324B946C5001EA697 /* DejaVuSans.ttf */; };
+		86D4C16724B946EE001EA697 /* Game_Music.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15724B946C5001EA697 /* Game_Music.wav */; };
+		86D4C16824B946EE001EA697 /* musicOn.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14B24B946C4001EA697 /* musicOn.png */; };
+		86D4C16924B946EE001EA697 /* Player.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14F24B946C4001EA697 /* Player.jpg */; };
+		86D4C16A24B946EE001EA697 /* red_button03.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15C24B946C5001EA697 /* red_button03.png */; };
+		86D4C16B24B946EE001EA697 /* red_button04.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15424B946C5001EA697 /* red_button04.png */; };
+		86D4C16C24B946EE001EA697 /* red_panel.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14C24B946C4001EA697 /* red_panel.png */; };
+		86D4C16D24B946EE001EA697 /* redSheet.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15F24B946C5001EA697 /* redSheet.png */; };
+		86D4C16E24B946EE001EA697 /* Sorrow's_Call.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15024B946C4001EA697 /* Sorrow's_Call.wav */; };
+		86D4C16F24B946EE001EA697 /* special3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C16024B946C5001EA697 /* special3.txt */; };
+		86D4C17024B946EE001EA697 /* specialTileCollisions.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15E24B946C5001EA697 /* specialTileCollisions.txt */; };
+		86D4C17124B946EE001EA697 /* specialTileCollisions2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15624B946C5001EA697 /* specialTileCollisions2.txt */; };
+		86D4C17224B946EE001EA697 /* sprites.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15D24B946C5001EA697 /* sprites.png */; };
+		86D4C17324B946EE001EA697 /* target.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14E24B946C4001EA697 /* target.png */; };
+		86D4C17424B946EE001EA697 /* TextBox.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14D24B946C4001EA697 /* TextBox.png */; };
+		86D4C17524B946EE001EA697 /* TextBoxBack.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15A24B946C5001EA697 /* TextBoxBack.jpg */; };
+		86D4C17624B946EE001EA697 /* textboxSequences.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14A24B946C4001EA697 /* textboxSequences.txt */; };
+		86D4C17724B946EE001EA697 /* textboxSequences2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C16124B946C5001EA697 /* textboxSequences2.txt */; };
+		86D4C17824B946EE001EA697 /* textboxSequences3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14924B946C4001EA697 /* textboxSequences3.txt */; };
+		86D4C17924B946EE001EA697 /* Tiles1-1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14724B946C4001EA697 /* Tiles1-1.png */; };
+		86D4C17A24B946EE001EA697 /* Tiles1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15524B946C5001EA697 /* Tiles1.png */; };
+		86D4C17B24B946EE001EA697 /* Tiles2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C14824B946C4001EA697 /* Tiles2.png */; };
+		86D4C17C24B946EE001EA697 /* ts4.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86D4C15924B946C5001EA697 /* ts4.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		863084E92481C52200693B0D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				86D4C16224B946EE001EA697 /* Angel_Music.wav in CopyFiles */,
+				86D4C16324B946EE001EA697 /* Azalean_Hymn.wav in CopyFiles */,
+				86D4C16424B946EE001EA697 /* background.png in CopyFiles */,
+				86D4C16524B946EE001EA697 /* Batlle_of_the_Heavens.wav in CopyFiles */,
+				86D4C16624B946EE001EA697 /* DejaVuSans.ttf in CopyFiles */,
+				86D4C16724B946EE001EA697 /* Game_Music.wav in CopyFiles */,
+				86D4C16824B946EE001EA697 /* musicOn.png in CopyFiles */,
+				86D4C16924B946EE001EA697 /* Player.jpg in CopyFiles */,
+				86D4C16A24B946EE001EA697 /* red_button03.png in CopyFiles */,
+				86D4C16B24B946EE001EA697 /* red_button04.png in CopyFiles */,
+				86D4C16C24B946EE001EA697 /* red_panel.png in CopyFiles */,
+				86D4C16D24B946EE001EA697 /* redSheet.png in CopyFiles */,
+				86D4C16E24B946EE001EA697 /* Sorrow's_Call.wav in CopyFiles */,
+				86D4C16F24B946EE001EA697 /* special3.txt in CopyFiles */,
+				86D4C17024B946EE001EA697 /* specialTileCollisions.txt in CopyFiles */,
+				86D4C17124B946EE001EA697 /* specialTileCollisions2.txt in CopyFiles */,
+				86D4C17224B946EE001EA697 /* sprites.png in CopyFiles */,
+				86D4C17324B946EE001EA697 /* target.png in CopyFiles */,
+				86D4C17424B946EE001EA697 /* TextBox.png in CopyFiles */,
+				86D4C17524B946EE001EA697 /* TextBoxBack.jpg in CopyFiles */,
+				86D4C17624B946EE001EA697 /* textboxSequences.txt in CopyFiles */,
+				86D4C17724B946EE001EA697 /* textboxSequences2.txt in CopyFiles */,
+				86D4C17824B946EE001EA697 /* textboxSequences3.txt in CopyFiles */,
+				86D4C17924B946EE001EA697 /* Tiles1-1.png in CopyFiles */,
+				86D4C17A24B946EE001EA697 /* Tiles1.png in CopyFiles */,
+				86D4C17B24B946EE001EA697 /* Tiles2.png in CopyFiles */,
+				86D4C17C24B946EE001EA697 /* ts4.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		863084EB2481C52200693B0D /* JuniorYearGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JuniorYearGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		863084EE2481C52200693B0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		864B2BB8248824B60062F141 /* gameComponents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameComponents.cpp; sourceTree = "<group>"; };
-		864B2BB9248824B60062F141 /* gameComponents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameComponents.hpp; sourceTree = "<group>"; };
-		8667EF5A2481F495001BC207 /* application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = application.cpp; sourceTree = "<group>"; };
-		8667EF5B2481F495001BC207 /* application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = application.hpp; sourceTree = "<group>"; };
 		8667EF5E2481FA0D001BC207 /* conanFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conanFile.txt; sourceTree = "<group>"; };
 		8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
 		8667EF612481FCD0001BC207 /* conan.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conan.lock; sourceTree = "<group>"; };
 		8667EF622481FCD0001BC207 /* conanbuildinfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conanbuildinfo.txt; sourceTree = "<group>"; };
 		8667EF632481FCD0001BC207 /* conaninfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conaninfo.txt; sourceTree = "<group>"; };
 		8667EF642481FCD0001BC207 /* graph_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = graph_info.json; sourceTree = "<group>"; };
-		8667EF6824830FFE001BC207 /* gameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameObject.cpp; sourceTree = "<group>"; };
-		8667EF6924830FFE001BC207 /* gameObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameObject.hpp; sourceTree = "<group>"; };
+		86D4C10C24B9466E001EA697 /* map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = map.hpp; sourceTree = "<group>"; };
+		86D4C10D24B9466E001EA697 /* magicBoomerang.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = magicBoomerang.cpp; sourceTree = "<group>"; };
+		86D4C10E24B9466E001EA697 /* textureWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textureWrapper.cpp; sourceTree = "<group>"; };
+		86D4C10F24B9466E001EA697 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sprite.cpp; sourceTree = "<group>"; };
+		86D4C11024B9466E001EA697 /* textboxProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textboxProcessor.cpp; sourceTree = "<group>"; };
+		86D4C11124B9466E001EA697 /* tile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tile.hpp; sourceTree = "<group>"; };
+		86D4C11224B9466E001EA697 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		86D4C11324B9466E001EA697 /* keyHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keyHandler.cpp; sourceTree = "<group>"; };
+		86D4C11424B9466E001EA697 /* gameEventHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gameEventHandler.hpp; sourceTree = "<group>"; };
+		86D4C11524B9466E001EA697 /* textureHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = textureHandler.hpp; sourceTree = "<group>"; };
+		86D4C11624B9466F001EA697 /* block.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = block.hpp; sourceTree = "<group>"; };
+		86D4C11724B9466F001EA697 /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
+		86D4C11824B9466F001EA697 /* gameObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gameObject.hpp; sourceTree = "<group>"; };
+		86D4C11924B9466F001EA697 /* textureHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textureHandler.cpp; sourceTree = "<group>"; };
+		86D4C11A24B9466F001EA697 /* enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enemy.cpp; sourceTree = "<group>"; };
+		86D4C11B24B9466F001EA697 /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gui.cpp; sourceTree = "<group>"; };
+		86D4C11C24B9466F001EA697 /* clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clock.cpp; sourceTree = "<group>"; };
+		86D4C11D24B9466F001EA697 /* enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = enemy.hpp; sourceTree = "<group>"; };
+		86D4C11E24B9466F001EA697 /* gameEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gameEventHandler.cpp; sourceTree = "<group>"; };
+		86D4C11F24B9466F001EA697 /* keyHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = keyHandler.hpp; sourceTree = "<group>"; };
+		86D4C12024B9466F001EA697 /* guiButtons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = guiButtons.cpp; sourceTree = "<group>"; };
+		86D4C12124B9466F001EA697 /* spritesheet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spritesheet.hpp; sourceTree = "<group>"; };
+		86D4C12224B9466F001EA697 /* textbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textbox.cpp; sourceTree = "<group>"; };
+		86D4C12324B9466F001EA697 /* sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sprite.hpp; sourceTree = "<group>"; };
+		86D4C12424B9466F001EA697 /* spritesheet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spritesheet.cpp; sourceTree = "<group>"; };
+		86D4C12524B9466F001EA697 /* textboxProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = textboxProcessor.hpp; sourceTree = "<group>"; };
+		86D4C12624B9466F001EA697 /* textbox.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = textbox.hpp; sourceTree = "<group>"; };
+		86D4C12724B9466F001EA697 /* textureWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = textureWrapper.hpp; sourceTree = "<group>"; };
+		86D4C12824B9466F001EA697 /* gui.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gui.hpp; sourceTree = "<group>"; };
+		86D4C12924B94670001EA697 /* tileCollisionProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tileCollisionProcessor.cpp; sourceTree = "<group>"; };
+		86D4C12A24B94670001EA697 /* player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
+		86D4C12B24B94670001EA697 /* tileCollisionProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tileCollisionProcessor.hpp; sourceTree = "<group>"; };
+		86D4C12C24B94670001EA697 /* guiButtons.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = guiButtons.hpp; sourceTree = "<group>"; };
+		86D4C12D24B94670001EA697 /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block.cpp; sourceTree = "<group>"; };
+		86D4C12E24B94670001EA697 /* event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = event.hpp; sourceTree = "<group>"; };
+		86D4C12F24B94670001EA697 /* clock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clock.hpp; sourceTree = "<group>"; };
+		86D4C13024B94670001EA697 /* magicBoomerang.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = magicBoomerang.hpp; sourceTree = "<group>"; };
+		86D4C13124B94670001EA697 /* tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tile.cpp; sourceTree = "<group>"; };
+		86D4C13224B94670001EA697 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		86D4C13324B94670001EA697 /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
+		86D4C14724B946C4001EA697 /* Tiles1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tiles1-1.png"; sourceTree = "<group>"; };
+		86D4C14824B946C4001EA697 /* Tiles2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiles2.png; sourceTree = "<group>"; };
+		86D4C14924B946C4001EA697 /* textboxSequences3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textboxSequences3.txt; sourceTree = "<group>"; };
+		86D4C14A24B946C4001EA697 /* textboxSequences.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textboxSequences.txt; sourceTree = "<group>"; };
+		86D4C14B24B946C4001EA697 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
+		86D4C14C24B946C4001EA697 /* red_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_panel.png; sourceTree = "<group>"; };
+		86D4C14D24B946C4001EA697 /* TextBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBox.png; sourceTree = "<group>"; };
+		86D4C14E24B946C4001EA697 /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
+		86D4C14F24B946C4001EA697 /* Player.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Player.jpg; sourceTree = "<group>"; };
+		86D4C15024B946C4001EA697 /* Sorrow's_Call.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Sorrow's_Call.wav"; sourceTree = "<group>"; };
+		86D4C15124B946C4001EA697 /* Angel_Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Angel_Music.wav; sourceTree = "<group>"; };
+		86D4C15224B946C5001EA697 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		86D4C15324B946C5001EA697 /* DejaVuSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DejaVuSans.ttf; sourceTree = "<group>"; };
+		86D4C15424B946C5001EA697 /* red_button04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button04.png; sourceTree = "<group>"; };
+		86D4C15524B946C5001EA697 /* Tiles1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiles1.png; sourceTree = "<group>"; };
+		86D4C15624B946C5001EA697 /* specialTileCollisions2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = specialTileCollisions2.txt; sourceTree = "<group>"; };
+		86D4C15724B946C5001EA697 /* Game_Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Game_Music.wav; sourceTree = "<group>"; };
+		86D4C15824B946C5001EA697 /* Azalean_Hymn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Azalean_Hymn.wav; sourceTree = "<group>"; };
+		86D4C15924B946C5001EA697 /* ts4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ts4.txt; sourceTree = "<group>"; };
+		86D4C15A24B946C5001EA697 /* TextBoxBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TextBoxBack.jpg; sourceTree = "<group>"; };
+		86D4C15B24B946C5001EA697 /* Batlle_of_the_Heavens.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Batlle_of_the_Heavens.wav; sourceTree = "<group>"; };
+		86D4C15C24B946C5001EA697 /* red_button03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button03.png; sourceTree = "<group>"; };
+		86D4C15D24B946C5001EA697 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		86D4C15E24B946C5001EA697 /* specialTileCollisions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = specialTileCollisions.txt; sourceTree = "<group>"; };
+		86D4C15F24B946C5001EA697 /* redSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redSheet.png; sourceTree = "<group>"; };
+		86D4C16024B946C5001EA697 /* special3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = special3.txt; sourceTree = "<group>"; };
+		86D4C16124B946C5001EA697 /* textboxSequences2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textboxSequences2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +201,48 @@
 		863084ED2481C52200693B0D /* JuniorYearGame */ = {
 			isa = PBXGroup;
 			children = (
+				86D4C12D24B94670001EA697 /* block.cpp */,
+				86D4C11624B9466F001EA697 /* block.hpp */,
+				86D4C11C24B9466F001EA697 /* clock.cpp */,
+				86D4C12F24B94670001EA697 /* clock.hpp */,
+				86D4C11A24B9466F001EA697 /* enemy.cpp */,
+				86D4C11D24B9466F001EA697 /* enemy.hpp */,
+				86D4C12E24B94670001EA697 /* event.hpp */,
+				86D4C11E24B9466F001EA697 /* gameEventHandler.cpp */,
+				86D4C11424B9466E001EA697 /* gameEventHandler.hpp */,
+				86D4C11824B9466F001EA697 /* gameObject.hpp */,
+				86D4C11B24B9466F001EA697 /* gui.cpp */,
+				86D4C12824B9466F001EA697 /* gui.hpp */,
+				86D4C12024B9466F001EA697 /* guiButtons.cpp */,
+				86D4C12C24B94670001EA697 /* guiButtons.hpp */,
+				86D4C11324B9466E001EA697 /* keyHandler.cpp */,
+				86D4C11F24B9466F001EA697 /* keyHandler.hpp */,
+				86D4C10D24B9466E001EA697 /* magicBoomerang.cpp */,
+				86D4C13024B94670001EA697 /* magicBoomerang.hpp */,
+				86D4C13224B94670001EA697 /* main.cpp */,
+				86D4C11724B9466F001EA697 /* main.hpp */,
+				86D4C13324B94670001EA697 /* map.cpp */,
+				86D4C10C24B9466E001EA697 /* map.hpp */,
+				86D4C11224B9466E001EA697 /* player.cpp */,
+				86D4C12A24B94670001EA697 /* player.hpp */,
+				86D4C10F24B9466E001EA697 /* sprite.cpp */,
+				86D4C12324B9466F001EA697 /* sprite.hpp */,
+				86D4C12424B9466F001EA697 /* spritesheet.cpp */,
+				86D4C12124B9466F001EA697 /* spritesheet.hpp */,
+				86D4C12224B9466F001EA697 /* textbox.cpp */,
+				86D4C12624B9466F001EA697 /* textbox.hpp */,
+				86D4C11024B9466E001EA697 /* textboxProcessor.cpp */,
+				86D4C12524B9466F001EA697 /* textboxProcessor.hpp */,
+				86D4C11924B9466F001EA697 /* textureHandler.cpp */,
+				86D4C11524B9466E001EA697 /* textureHandler.hpp */,
+				86D4C10E24B9466E001EA697 /* textureWrapper.cpp */,
+				86D4C12724B9466F001EA697 /* textureWrapper.hpp */,
+				86D4C13124B94670001EA697 /* tile.cpp */,
+				86D4C11124B9466E001EA697 /* tile.hpp */,
+				86D4C12924B94670001EA697 /* tileCollisionProcessor.cpp */,
+				86D4C12B24B94670001EA697 /* tileCollisionProcessor.hpp */,
+				868525FF248EDC10007D242D /* resources */,
 				8667EF5F2481FA13001BC207 /* conanFiles */,
-				863084EE2481C52200693B0D /* main.cpp */,
-				8667EF5A2481F495001BC207 /* application.cpp */,
-				8667EF5B2481F495001BC207 /* application.hpp */,
-				8667EF6824830FFE001BC207 /* gameObject.cpp */,
-				8667EF6924830FFE001BC207 /* gameObject.hpp */,
-				864B2BB8248824B60062F141 /* gameComponents.cpp */,
-				864B2BB9248824B60062F141 /* gameComponents.hpp */,
 			);
 			path = JuniorYearGame;
 			sourceTree = "<group>";
@@ -95,6 +258,40 @@
 				8667EF5E2481FA0D001BC207 /* conanFile.txt */,
 			);
 			path = conanFiles;
+			sourceTree = "<group>";
+		};
+		868525FF248EDC10007D242D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				86D4C15124B946C4001EA697 /* Angel_Music.wav */,
+				86D4C15824B946C5001EA697 /* Azalean_Hymn.wav */,
+				86D4C15224B946C5001EA697 /* background.png */,
+				86D4C15B24B946C5001EA697 /* Batlle_of_the_Heavens.wav */,
+				86D4C15324B946C5001EA697 /* DejaVuSans.ttf */,
+				86D4C15724B946C5001EA697 /* Game_Music.wav */,
+				86D4C14B24B946C4001EA697 /* musicOn.png */,
+				86D4C14F24B946C4001EA697 /* Player.jpg */,
+				86D4C15C24B946C5001EA697 /* red_button03.png */,
+				86D4C15424B946C5001EA697 /* red_button04.png */,
+				86D4C14C24B946C4001EA697 /* red_panel.png */,
+				86D4C15F24B946C5001EA697 /* redSheet.png */,
+				86D4C15024B946C4001EA697 /* Sorrow's_Call.wav */,
+				86D4C16024B946C5001EA697 /* special3.txt */,
+				86D4C15E24B946C5001EA697 /* specialTileCollisions.txt */,
+				86D4C15624B946C5001EA697 /* specialTileCollisions2.txt */,
+				86D4C15D24B946C5001EA697 /* sprites.png */,
+				86D4C14E24B946C4001EA697 /* target.png */,
+				86D4C14D24B946C4001EA697 /* TextBox.png */,
+				86D4C15A24B946C5001EA697 /* TextBoxBack.jpg */,
+				86D4C14A24B946C4001EA697 /* textboxSequences.txt */,
+				86D4C16124B946C5001EA697 /* textboxSequences2.txt */,
+				86D4C14924B946C4001EA697 /* textboxSequences3.txt */,
+				86D4C14724B946C4001EA697 /* Tiles1-1.png */,
+				86D4C15524B946C5001EA697 /* Tiles1.png */,
+				86D4C14824B946C4001EA697 /* Tiles2.png */,
+				86D4C15924B946C5001EA697 /* ts4.txt */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +351,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8667EF5C2481F495001BC207 /* application.cpp in Sources */,
-				8667EF6A24830FFE001BC207 /* gameObject.cpp in Sources */,
-				863084EF2481C52200693B0D /* main.cpp in Sources */,
-				864B2BBA248824B60062F141 /* gameComponents.cpp in Sources */,
+				86D4C13C24B94670001EA697 /* gui.cpp in Sources */,
+				86D4C14624B94670001EA697 /* map.cpp in Sources */,
+				86D4C13E24B94670001EA697 /* gameEventHandler.cpp in Sources */,
+				86D4C14524B94670001EA697 /* main.cpp in Sources */,
+				86D4C14124B94670001EA697 /* spritesheet.cpp in Sources */,
+				86D4C13B24B94670001EA697 /* enemy.cpp in Sources */,
+				86D4C13F24B94670001EA697 /* guiButtons.cpp in Sources */,
+				86D4C14424B94670001EA697 /* tile.cpp in Sources */,
+				86D4C14324B94670001EA697 /* block.cpp in Sources */,
+				86D4C13424B94670001EA697 /* magicBoomerang.cpp in Sources */,
+				86D4C13824B94670001EA697 /* player.cpp in Sources */,
+				86D4C14224B94670001EA697 /* tileCollisionProcessor.cpp in Sources */,
+				86D4C14024B94670001EA697 /* textbox.cpp in Sources */,
+				86D4C13D24B94670001EA697 /* clock.cpp in Sources */,
+				86D4C13924B94670001EA697 /* keyHandler.cpp in Sources */,
+				86D4C13A24B94670001EA697 /* textureHandler.cpp in Sources */,
+				86D4C13524B94670001EA697 /* textureWrapper.cpp in Sources */,
+				86D4C13624B94670001EA697 /* sprite.cpp in Sources */,
+				86D4C13724B94670001EA697 /* textboxProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K965454LM2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -290,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8667EF602481FCD0001BC207 /* conanbuildinfo.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K965454LM2;
 				ENABLE_HARDENED_RUNTIME = YES;

@@ -1,0 +1,7 @@
+UNISEQUENCE FILE
+SEQUENCE START 1
+"Welcome to Atheria, a world not unlike our own! [CLICK TO CONTINUE]"
+"After your grand adventures in the last game, The Amulet of Atheria 1, you have been called upon again by Atherial for help! [CLICK TO CONTINUE]"
+"Azazel threatens to take the Henassian flame and plunge the whole world into darkness.  It's up to you to stop him with your newfound abilities. [CLICK TO CONTINUE]"
+"Proceed to the next sign to learn more! [CLICK TO CONTINUE]"
+SEQUENCE END 1

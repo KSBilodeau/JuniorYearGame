@@ -1,0 +1,9 @@
+UNISEQUENCE FILE
+SEQUENCE START 1
+"First, since this game is a demo, we, the developers, would like to share everything we have made for this game as of yet! [CLICK TO CONTINUE]"
+"If you would like to indulge in the various hand composed pieces made for this game, click the music button in the top left hand corner. [CLICK TO CONTINUE]"
+"To listen to the next piece in the play list, simple press Left Control and the P key at the same time and press the music button again. [CLICK TO CONTINUE]"
+"Please refrain from spamming the music button, as doing so could affect your speakers and or quality of gameplay. [CLICK TO CONTINUE]"
+"Once you have fully enjoyed all the wonderful music, proceed to the next sign! [CLICK TO CONTINUE]"
+SEQUENCE END 1
+

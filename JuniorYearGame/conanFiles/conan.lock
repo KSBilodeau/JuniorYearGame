@@ -4,96 +4,1182 @@
   "nodes": {
    "0": {
     "pref": null,
-    "options": "bzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\njbig:fPIC=True\njbig:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nsdl2_image:bmp=True\nsdl2_image:fPIC=True\nsdl2_image:gif=True\nsdl2_image:imageio=False\nsdl2_image:jpg=True\nsdl2_image:lbm=True\nsdl2_image:pcx=True\nsdl2_image:png=True\nsdl2_image:pnm=True\nsdl2_image:shared=False\nsdl2_image:svg=True\nsdl2_image:tga=True\nsdl2_image:tif=True\nsdl2_image:webp=True\nsdl2_image:xcf=True\nsdl2_image:xpm=True\nsdl2_image:xv=True\nsdl2_ttf:fPIC=True\nsdl2_ttf:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "options": "boost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_cycle_group_c:shared=False\nboost_cycle_group_c:threadapi=default\nboost_cycle_group_c:use_bzip2=True\nboost_cycle_group_c:use_lzma=True\nboost_cycle_group_c:use_zlib=True\nboost_cycle_group_c:use_zstd=True\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nflac:use_asm=False\nfluidsynth:aufile=False\nfluidsynth:coreaudio=True\nfluidsynth:coremidi=True\nfluidsynth:dbus=False\nfluidsynth:fPIC=True\nfluidsynth:floats=False\nfluidsynth:fpe-check=False\nfluidsynth:framework=False\nfluidsynth:ipv6=True\nfluidsynth:jack=False\nfluidsynth:ladspa=False\nfluidsynth:libsndfile=False\nfluidsynth:midishare=False\nfluidsynth:network=True\nfluidsynth:oboe=False\nfluidsynth:opensles=False\nfluidsynth:oss=False\nfluidsynth:pkgconfig=True\nfluidsynth:portaudio=False\nfluidsynth:pulseaudio=False\nfluidsynth:readline=False\nfluidsynth:sdl2=False\nfluidsynth:shared=False\nfluidsynth:threads=False\nfluidsynth:trap-on-check=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\njbig:fPIC=True\njbig:shared=False\nlibelf:shared=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibmad:fPIC=True\nlibmad:shared=False\nlibmikmod:fPIC=True\nlibmikmod:shared=False\nlibmikmod:with_coreaudio=True\nlibmodplug:fPIC=True\nlibmodplug:shared=False\nlibmpg123:fPIC=True\nlibmpg123:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:cxx=True\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:fPIC=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\nlzma:fPIC=True\nlzma:shared=False\nogg:fPIC=True\nogg:shared=False\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nopus:fPIC=True\nopus:fixed_point=False\nopus:shared=False\nopusfile:fPIC=True\nopusfile:shared=False\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nsdl2_image:bmp=True\nsdl2_image:fPIC=True\nsdl2_image:gif=True\nsdl2_image:imageio=False\nsdl2_image:jpg=True\nsdl2_image:lbm=True\nsdl2_image:pcx=True\nsdl2_image:png=True\nsdl2_image:pnm=True\nsdl2_image:shared=False\nsdl2_image:svg=True\nsdl2_image:tga=True\nsdl2_image:tif=True\nsdl2_image:webp=True\nsdl2_image:xcf=True\nsdl2_image:xpm=True\nsdl2_image:xv=True\nsdl2_mixer:cmd=False\nsdl2_mixer:fPIC=True\nsdl2_mixer:flac=True\nsdl2_mixer:fluidsynth=True\nsdl2_mixer:mad=True\nsdl2_mixer:mikmod=True\nsdl2_mixer:modplug=True\nsdl2_mixer:mpg123=True\nsdl2_mixer:nativemidi=True\nsdl2_mixer:ogg=True\nsdl2_mixer:opus=True\nsdl2_mixer:shared=False\nsdl2_mixer:wav=True\nsdl2_ttf:fPIC=True\nsdl2_ttf:shared=False\nvorbis:fPIC=True\nvorbis:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
     "requires": [
      "1",
      "2",
-     "3",
+     "6",
      "5",
-     "8"
+     "7",
+     "8",
+     "10",
+     "12",
+     "18",
+     "32",
+     "36",
+     "59"
     ],
-    "path": "/Users/ksbilodeau/Desktop/Xcode Projects/JuniorYearGame/JuniorYearGame/conanFiles/conanfile.txt"
+    "path": "/Users/ksbilodeau/Documents/Xcode Projects/JuniorYearGame/JuniorYearGame/conanFiles/conanfile.txt"
    },
    "1": {
-    "pref": "libpng/1.6.37#0:eb50d18a5a5d59bd0c332464a4c348ab65e353bf#0",
-    "options": "api_prefix=None\nfPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
-    "requires": [
-     "2"
-    ]
+    "pref": "opus/1.3.1@bincrafters/stable#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nfixed_point=False\nshared=False"
    },
    "2": {
-    "pref": "zlib/1.2.11#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
-    "options": "fPIC=True\nminizip=False\nshared=False"
-   },
-   "3": {
-    "pref": "sdl2/2.0.12@bincrafters/stable#0:f616f9b5a0baa5206386ecbf818542a65bd9a834#0",
-    "options": "fPIC=True\niconv=True\nsdl2main=True\nshared=False\nlibiconv:fPIC=True\nlibiconv:shared=False",
+    "pref": "opusfile/0.10@bincrafters/stable#0:bad0758b25f411b9a2443601740a4d2231918734#0",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nopus:fPIC=True\nopus:fixed_point=False\nopus:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
     "requires": [
+     "1",
+     "3",
      "4"
     ]
    },
-   "4": {
-    "pref": "libiconv/1.16#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+   "3": {
+    "pref": "ogg/1.3.4#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
     "options": "fPIC=True\nshared=False"
    },
-   "5": {
-    "pref": "sdl2_ttf/2.0.15@bincrafters/stable#0:e6ad2b38a86a9ecfd0a7149f2bf928a1a31aa7f2#78a8bfd1e0cabff099d580dd251188bf",
-    "options": "fPIC=True\nshared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+   "4": {
+    "pref": "openssl/1.0.2t#0:eb50d18a5a5d59bd0c332464a4c348ab65e353bf#0",
+    "options": "386=False\nfPIC=True\nno_asm=False\nno_async=False\nno_bf=False\nno_cast=False\nno_des=False\nno_dh=False\nno_dsa=False\nno_dso=False\nno_hmac=False\nno_md2=False\nno_md5=False\nno_mdc2=False\nno_rc2=False\nno_rc4=False\nno_rc5=False\nno_rsa=False\nno_sha=False\nno_sse2=False\nno_threads=False\nno_zlib=False\nopenssldir=None\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
     "requires": [
-     "6",
-     "3"
+     "5"
     ]
    },
+   "5": {
+    "pref": "zlib/1.2.11#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nminizip=False\nshared=False"
+   },
    "6": {
-    "pref": "freetype/2.9.1@bincrafters/stable#0:9fbc622fdb9d2462147cf446a56b1688bf016d05#cac9723f31dfd6c84a1f98e8d17c6da1",
-    "options": "fPIC=True\nshared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "pref": "libpng/1.6.37#0:eb50d18a5a5d59bd0c332464a4c348ab65e353bf#0",
+    "options": "api_prefix=None\nfPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
     "requires": [
-     "1",
-     "2",
-     "7"
+     "5"
     ]
    },
    "7": {
-    "pref": "bzip2/1.0.6@conan/stable#0:32bef4803d4b079e983ecb27f105881e778bc5a7#78fe6dab997280d77f4c12a42d7a4f9f",
+    "pref": "bzip2/1.0.8#0:32bef4803d4b079e983ecb27f105881e778bc5a7#0",
     "options": "build_executable=True\nfPIC=True\nshared=False"
    },
    "8": {
-    "pref": "sdl2_image/2.0.5@bincrafters/stable#0:3e7f1b8629b2e18d2ec985852e551163d405f19a#2ff2300c380b3d7b8fd06eaa2625e299",
-    "options": "bmp=True\nfPIC=True\ngif=True\nimageio=False\njpg=True\nlbm=True\npcx=True\npng=True\npnm=True\nshared=False\nsvg=True\ntga=True\ntif=True\nwebp=True\nxcf=True\nxpm=True\nxv=True\njbig:fPIC=True\njbig:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "pref": "sdl2/2.0.12@bincrafters/stable#0:f616f9b5a0baa5206386ecbf818542a65bd9a834#0",
+    "options": "fPIC=True\niconv=True\nsdl2main=True\nshared=False\nlibiconv:fPIC=True\nlibiconv:shared=False",
     "requires": [
-     "3",
-     "9",
-     "11",
-     "1",
-     "13",
-     "2"
+     "9"
     ]
    },
    "9": {
-    "pref": "libtiff/4.0.9#0:e2437fae996773a64f3ef1bf3d1a754a09fa33a4#b6b9059c01007fec0d55cd5d093b89a1",
-    "options": "fPIC=True\njbig=True\njpeg=True\nlzma=True\nshared=False\nzlib=True\njbig:fPIC=True\njbig:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
-    "requires": [
-     "2",
-     "10",
-     "11",
-     "12"
-    ]
+    "pref": "libiconv/1.16#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
    },
    "10": {
+    "pref": "sdl2_ttf/2.0.15@bincrafters/stable#0:e6ad2b38a86a9ecfd0a7149f2bf928a1a31aa7f2#ea54d6211f524435d160fc19de30c4f5",
+    "options": "fPIC=True\nshared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "11",
+     "8"
+    ]
+   },
+   "11": {
+    "pref": "freetype/2.9.1@bincrafters/stable#0:9fbc622fdb9d2462147cf446a56b1688bf016d05#ac77055e5a9dc7bef8a21f2feffd3f8a",
+    "options": "fPIC=True\nshared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "6",
+     "5",
+     "7"
+    ]
+   },
+   "12": {
+    "pref": "sdl2_image/2.0.5@bincrafters/stable#0:3e7f1b8629b2e18d2ec985852e551163d405f19a#1f5ef952a1b3e1da17c80b025f54e55a",
+    "options": "bmp=True\nfPIC=True\ngif=True\nimageio=False\njpg=True\nlbm=True\npcx=True\npng=True\npnm=True\nshared=False\nsvg=True\ntga=True\ntif=True\nwebp=True\nxcf=True\nxpm=True\nxv=True\njbig:fPIC=True\njbig:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibtiff:cxx=True\nlibtiff:fPIC=True\nlibtiff:jbig=True\nlibtiff:jpeg=True\nlibtiff:lzma=True\nlibtiff:shared=False\nlibtiff:zlib=True\nlibwebp:fPIC=True\nlibwebp:near_lossless=True\nlibwebp:shared=False\nlibwebp:swap_16bit_csp=False\nlibwebp:with_simd=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "8",
+     "13",
+     "15",
+     "6",
+     "17",
+     "5"
+    ]
+   },
+   "13": {
+    "pref": "libtiff/4.0.9#0:46fc025ce5b00c669654ad9a8d9da44a7e2f6dc5#c8f47f111dc0ce2b575db54d509ecbb3",
+    "options": "cxx=True\nfPIC=True\njbig=True\njpeg=True\nlzma=True\nshared=False\nzlib=True\njbig:fPIC=True\njbig:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nxz_utils:fPIC=True\nxz_utils:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "5",
+     "14",
+     "15",
+     "16"
+    ]
+   },
+   "14": {
     "pref": "xz_utils/5.2.4#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
     "options": "fPIC=True\nshared=False"
    },
-   "11": {
+   "15": {
     "pref": "libjpeg/9c#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
     "options": "fPIC=True\nshared=False"
    },
-   "12": {
+   "16": {
     "pref": "jbig/20160605#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
     "options": "fPIC=True\nshared=False"
    },
-   "13": {
+   "17": {
     "pref": "libwebp/1.0.3#0:925627bb9faa4169b8ec3d0d66343ea8295547e5#0",
     "options": "fPIC=True\nnear_lossless=True\nshared=False\nswap_16bit_csp=False\nwith_simd=True"
+   },
+   "18": {
+    "pref": "sdl2_mixer/2.0.4@bincrafters/stable#0:524d5045e03c0c514f5ba448fb94bdc92f0c43dd#b5a98498f8488d767baef86589de83fd",
+    "options": "cmd=False\nfPIC=True\nflac=True\nfluidsynth=True\nmad=True\nmikmod=True\nmodplug=True\nmpg123=True\nnativemidi=True\nogg=True\nopus=True\nshared=False\nwav=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nflac:use_asm=False\nfluidsynth:aufile=False\nfluidsynth:coreaudio=True\nfluidsynth:coremidi=True\nfluidsynth:dbus=False\nfluidsynth:fPIC=True\nfluidsynth:floats=False\nfluidsynth:fpe-check=False\nfluidsynth:framework=False\nfluidsynth:ipv6=True\nfluidsynth:jack=False\nfluidsynth:ladspa=False\nfluidsynth:libsndfile=False\nfluidsynth:midishare=False\nfluidsynth:network=True\nfluidsynth:oboe=False\nfluidsynth:opensles=False\nfluidsynth:oss=False\nfluidsynth:pkgconfig=True\nfluidsynth:portaudio=False\nfluidsynth:pulseaudio=False\nfluidsynth:readline=False\nfluidsynth:sdl2=False\nfluidsynth:shared=False\nfluidsynth:threads=False\nfluidsynth:trap-on-check=False\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\nlibelf:shared=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibmad:fPIC=True\nlibmad:shared=False\nlibmikmod:fPIC=True\nlibmikmod:shared=False\nlibmikmod:with_coreaudio=True\nlibmodplug:fPIC=True\nlibmodplug:shared=False\nlibmpg123:fPIC=True\nlibmpg123:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:fPIC=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\nogg:fPIC=True\nogg:shared=False\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nopus:fPIC=True\nopus:fixed_point=False\nopus:shared=False\nopusfile:fPIC=True\nopusfile:shared=False\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nsdl2:fPIC=True\nsdl2:iconv=True\nsdl2:sdl2main=True\nsdl2:shared=False\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "8",
+     "19",
+     "20",
+     "21",
+     "3",
+     "22",
+     "1",
+     "2",
+     "23",
+     "24",
+     "25"
+    ]
+   },
+   "19": {
+    "pref": "flac/1.3.2@bincrafters/stable#0:211249dc8f701bedd6ed1cc8527cadaafd91d318#0",
+    "options": "fPIC=True\nshared=False\nuse_asm=False\nogg:fPIC=True\nogg:shared=False",
+    "requires": [
+     "3"
+    ]
+   },
+   "20": {
+    "pref": "libmpg123/1.25.10@bincrafters/stable#0:eec6acc43f6348a597c20e5bd28d9e0590a02597#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "21": {
+    "pref": "libmad/0.15.1b@bincrafters/stable#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "22": {
+    "pref": "vorbis/1.3.6#0:853d5de4ab49af74d80696ea461b3783627bc470#0",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "requires": [
+     "3"
+    ]
+   },
+   "23": {
+    "pref": "libmikmod/3.3.11.1@bincrafters/stable#0:a174e24f5d1d37910e2813828a14189220ae0354#0",
+    "options": "fPIC=True\nshared=False\nwith_coreaudio=True"
+   },
+   "24": {
+    "pref": "libmodplug/0.8.9.0@bincrafters/stable#0:eec6acc43f6348a597c20e5bd28d9e0590a02597#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "25": {
+    "pref": "fluidsynth/2.0.5@bincrafters/stable#0:2577e5686e23b806727389056fd43d77eebe602a#7d4b46d06fc53e5943f200bf976f8688",
+    "options": "aufile=False\ncoreaudio=True\ncoremidi=True\ndbus=False\nfPIC=True\nfloats=False\nfpe-check=False\nframework=False\nipv6=True\njack=False\nladspa=False\nlibsndfile=False\nmidishare=False\nnetwork=True\noboe=False\nopensles=False\noss=False\npkgconfig=True\nportaudio=False\npulseaudio=False\nreadline=False\nsdl2=False\nshared=False\nthreads=False\ntrap-on-check=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\nlibelf:shared=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:fPIC=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "26"
+    ]
+   },
+   "26": {
+    "pref": "glib/2.58.3@bincrafters/stable#0:04733a18a78e029d8a3e2a95173bdfa64232efee#0",
+    "options": "fPIC=True\nshared=False\nwith_elf=True\nwith_pcre=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\ngettext:fPIC=True\ngettext:shared=False\nlibelf:shared=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:fPIC=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "5",
+     "27",
+     "28",
+     "29",
+     "30"
+    ]
+   },
+   "27": {
+    "pref": "libffi/3.2.1#0:f74366f76f700cc6e991285892ad7a23c30e6d47#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "28": {
+    "pref": "pcre/8.41#0:d6dbf7bc4ba20d9c0937065aaab46dc0bba20c3a#0",
+    "options": "build_pcrecpp=False\nbuild_pcregrep=False\nfPIC=True\nshared=False\nwith_bzip2=True\nwith_jit=False\nwith_unicode_properties=False\nwith_utf=False\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "7",
+     "5"
+    ]
+   },
+   "29": {
+    "pref": "libelf/0.8.13#0:8e2e3059f283d3d138b85d022534c5632c4ffd1b#0",
+    "options": "shared=False"
+   },
+   "30": {
+    "pref": "gettext/0.20.1@bincrafters/stable#0:88b5b76f39090afa496b5de62c255e1a704e4f63#0",
+    "options": "fPIC=True\nshared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:fPIC=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "9",
+     "31"
+    ]
+   },
+   "31": {
+    "pref": "libxml2/2.9.9#0:80a971ff9962f4f3f195b833b69632e2b471a881#0",
+    "options": "c14n=True\ncatalog=True\ndocbook=True\nfPIC=True\nftp=True\nhtml=True\nhttp=True\niconv=True\nicu=False\niso8859x=True\nlegacy=True\nlzma=False\nmem-debug=False\noutput=True\npattern=True\npush=True\npython=False\nreader=True\nregexps=True\nrun-debug=False\nsax1=True\nschemas=True\nschematron=True\nshared=False\nthreads=True\ntree=True\nvalid=True\nwriter=True\nxinclude=True\nxpath=True\nxptr=True\nzlib=True\nlibiconv:fPIC=True\nlibiconv:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "5",
+     "9"
+    ]
+   },
+   "32": {
+    "pref": "boost_system/1.69.0@bincrafters/stable#0:9d9c96b924ba3e02770fd3d9120490965ab1069f#9558b45ca4f9207298c6aa4abc1cf520",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "34"
+    ]
+   },
+   "33": {
+    "pref": "boost_config/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "34": {
+    "pref": "boost_winapi/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "35"
+    ]
+   },
+   "35": {
+    "pref": "boost_predef/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "36": {
+    "pref": "boost_filesystem/1.69.0@bincrafters/stable#0:990db7815e1a86f2a891ffd6ec59c196bc23eb6a#465cfaf2163506889cafa69f95641526",
+    "options": "shared=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "38",
+     "39",
+     "40",
+     "45",
+     "46",
+     "49",
+     "42",
+     "32",
+     "43"
+    ]
+   },
+   "37": {
+    "pref": "boost_assert/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33"
+    ]
+   },
+   "38": {
+    "pref": "boost_container_hash/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "40",
+     "44",
+     "42",
+     "43"
+    ]
+   },
+   "39": {
+    "pref": "boost_core/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33"
+    ]
+   },
+   "40": {
+    "pref": "boost_detail/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "41",
+     "42",
+     "43"
+    ]
+   },
+   "41": {
+    "pref": "boost_preprocessor/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "42": {
+    "pref": "boost_static_assert/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33"
+    ]
+   },
+   "43": {
+    "pref": "boost_type_traits/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "42"
+    ]
+   },
+   "44": {
+    "pref": "boost_integer/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "42"
+    ]
+   },
+   "45": {
+    "pref": "boost_io/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33"
+    ]
+   },
+   "46": {
+    "pref": "boost_iterator/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "47",
+     "33",
+     "48",
+     "39",
+     "40",
+     "53",
+     "56",
+     "54",
+     "58",
+     "49",
+     "42",
+     "43",
+     "55"
+    ]
+   },
+   "47": {
+    "pref": "boost_concept_check/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "41",
+     "42",
+     "43"
+    ]
+   },
+   "48": {
+    "pref": "boost_conversion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "49",
+     "51",
+     "43",
+     "52"
+    ]
+   },
+   "49": {
+    "pref": "boost_smart_ptr/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "50",
+     "35",
+     "42",
+     "51",
+     "43"
+    ]
+   },
+   "50": {
+    "pref": "boost_move/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "42"
+    ]
+   },
+   "51": {
+    "pref": "boost_throw_exception/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33"
+    ]
+   },
+   "52": {
+    "pref": "boost_typeof/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "41",
+     "43"
+    ]
+   },
+   "53": {
+    "pref": "boost_function_types/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "40",
+     "54",
+     "41",
+     "43"
+    ]
+   },
+   "54": {
+    "pref": "boost_mpl/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "35",
+     "41",
+     "42",
+     "43",
+     "55"
+    ]
+   },
+   "55": {
+    "pref": "boost_utility/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "38",
+     "39",
+     "41",
+     "42",
+     "51",
+     "43"
+    ]
+   },
+   "56": {
+    "pref": "boost_fusion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "38",
+     "39",
+     "53",
+     "54",
+     "41",
+     "42",
+     "57",
+     "43",
+     "52",
+     "55"
+    ]
+   },
+   "57": {
+    "pref": "boost_tuple/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "42",
+     "43"
+    ]
+   },
+   "58": {
+    "pref": "boost_optional/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "40",
+     "50",
+     "35",
+     "42",
+     "51",
+     "43",
+     "55"
+    ]
+   },
+   "59": {
+    "pref": "boost_serialization/1.69.0@bincrafters/stable#0:1947df630a56437a6c69a49a26857b14ac313532#3dc7e06917a53604b2142152c0a1f694",
+    "options": "boost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_cycle_group_c:shared=False\nboost_cycle_group_c:threadapi=default\nboost_cycle_group_c:use_bzip2=True\nboost_cycle_group_c:use_lzma=True\nboost_cycle_group_c:use_zlib=True\nboost_cycle_group_c:use_zstd=True\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "60"
+    ]
+   },
+   "60": {
+    "pref": "boost_cycle_group_c/1.69.0@bincrafters/stable#0:3913e4261ad25dda4f2f99d2cab4e0797d6f3589#ce846f8a0a7a923801dfc6b2dfdaded3",
+    "options": "shared=False\nthreadapi=default\nuse_bzip2=True\nuse_lzma=True\nuse_zlib=True\nuse_zstd=True\nboost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "61",
+     "63",
+     "37",
+     "73",
+     "64",
+     "74",
+     "47",
+     "33",
+     "71",
+     "38",
+     "39",
+     "40",
+     "77",
+     "65",
+     "36",
+     "78",
+     "66",
+     "53",
+     "56",
+     "44",
+     "72",
+     "45",
+     "46",
+     "80",
+     "83",
+     "84",
+     "50",
+     "54",
+     "68",
+     "58",
+     "85",
+     "87",
+     "35",
+     "41",
+     "86",
+     "79",
+     "76",
+     "69",
+     "49",
+     "42",
+     "32",
+     "51",
+     "88",
+     "89",
+     "57",
+     "43",
+     "52",
+     "70",
+     "55",
+     "90",
+     "34",
+     "7",
+     "5",
+     "91",
+     "92"
+    ]
+   },
+   "61": {
+    "pref": "boost_algorithm/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_cycle_group_a:shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "62"
+    ]
+   },
+   "62": {
+    "pref": "boost_cycle_group_a/1.69.0@bincrafters/stable#0:ee4ffadee8a92c3871411eecb3ae6f7d4ef39c96#adbaa06a457fa296d515dc010137b95d",
+    "options": "shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "63",
+     "37",
+     "64",
+     "47",
+     "33",
+     "38",
+     "39",
+     "40",
+     "65",
+     "66",
+     "46",
+     "54",
+     "68",
+     "58",
+     "41",
+     "69",
+     "42",
+     "51",
+     "57",
+     "43",
+     "70",
+     "55"
+    ]
+   },
+   "63": {
+    "pref": "boost_array/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "42",
+     "51"
+    ]
+   },
+   "64": {
+    "pref": "boost_bind/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39"
+    ]
+   },
+   "65": {
+    "pref": "boost_exception/1.69.0@bincrafters/stable#0:d69f848a9f2973951aa64e16b77ae099cf260a79#cc64640834827eadc6b12e3e5440df90",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "49",
+     "51",
+     "57",
+     "43"
+    ]
+   },
+   "66": {
+    "pref": "boost_function/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "64",
+     "33",
+     "39",
+     "44",
+     "41",
+     "51",
+     "67",
+     "43",
+     "52"
+    ]
+   },
+   "67": {
+    "pref": "boost_type_index/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "38",
+     "39",
+     "41",
+     "49",
+     "42",
+     "51",
+     "43"
+    ]
+   },
+   "68": {
+    "pref": "boost_numeric_conversion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "48",
+     "39",
+     "54",
+     "41",
+     "51",
+     "43"
+    ]
+   },
+   "69": {
+    "pref": "boost_regex/1.69.0@bincrafters/stable#0:89b59a178f738ef6aff2590c18d34142229d8514#2d01fd4b2422024ec1d66ce29fd4cbc5",
+    "options": "shared=False\nuse_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "47",
+     "33",
+     "38",
+     "39",
+     "44",
+     "46",
+     "54",
+     "35",
+     "49",
+     "42",
+     "51",
+     "43"
+    ]
+   },
+   "70": {
+    "pref": "boost_unordered/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_container:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "71",
+     "38",
+     "39",
+     "40",
+     "50",
+     "35",
+     "41",
+     "49",
+     "51",
+     "57",
+     "43"
+    ]
+   },
+   "71": {
+    "pref": "boost_container/1.69.0@bincrafters/stable#0:791d72b83f7bad605b9d6b40b59ace26bc13c411#627de6adecbbeb251af7fc5f5aaedb03",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "38",
+     "39",
+     "72",
+     "50",
+     "42",
+     "43"
+    ]
+   },
+   "72": {
+    "pref": "boost_intrusive/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "38",
+     "39",
+     "50",
+     "42"
+    ]
+   },
+   "73": {
+    "pref": "boost_atomic/1.69.0@bincrafters/stable#0:b3745d5bf2b1b31db8412187de220cc912673bff#598b5daade372ab05b838310aa871805",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "43"
+    ]
+   },
+   "74": {
+    "pref": "boost_chrono/1.69.0@bincrafters/stable#0:71a2db0e9fe5ba852962eb693b91e48b08b0dfd3#8feb1cc6aa74b206e7b933fde6e06256",
+    "options": "shared=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "44",
+     "50",
+     "54",
+     "35",
+     "75",
+     "42",
+     "32",
+     "51",
+     "43",
+     "52",
+     "55",
+     "34"
+    ]
+   },
+   "75": {
+    "pref": "boost_ratio/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "44",
+     "54",
+     "76",
+     "42",
+     "43"
+    ]
+   },
+   "76": {
+    "pref": "boost_rational/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "44",
+     "42",
+     "51",
+     "43",
+     "55"
+    ]
+   },
+   "77": {
+    "pref": "boost_endian/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "39",
+     "35",
+     "42",
+     "43",
+     "55"
+    ]
+   },
+   "78": {
+    "pref": "boost_foreach/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "46",
+     "54",
+     "79",
+     "43"
+    ]
+   },
+   "79": {
+    "pref": "boost_range/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_cycle_group_a:shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "62"
+    ]
+   },
+   "80": {
+    "pref": "boost_lexical_cast/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_atomic:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "81"
+    ]
+   },
+   "81": {
+    "pref": "boost_cycle_group_b/1.69.0@bincrafters/stable#0:d6c7c7a65916cd363d9c329ab194d0cd8d8ffaf9#e327d93b6051cc4b0a981f3afa886165",
+    "options": "shared=False\nboost_atomic:shared=False\nboost_container:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "63",
+     "37",
+     "73",
+     "47",
+     "33",
+     "71",
+     "39",
+     "40",
+     "56",
+     "44",
+     "82",
+     "54",
+     "68",
+     "35",
+     "79",
+     "49",
+     "42",
+     "51",
+     "57",
+     "43"
+    ]
+   },
+   "82": {
+    "pref": "boost_lambda/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "64",
+     "33",
+     "39",
+     "40",
+     "46",
+     "54",
+     "41",
+     "57",
+     "43",
+     "55"
+    ]
+   },
+   "83": {
+    "pref": "boost_locale/1.69.0@bincrafters/stable#0:ea1c153f0963038f46de035d33efe32f8d8ca0d0#dc6a1d1293a92ffc2c0cdaf60a5edfcb",
+    "options": "shared=False\nuse_icu=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "66",
+     "46",
+     "49",
+     "42",
+     "32",
+     "43"
+    ]
+   },
+   "84": {
+    "pref": "boost_math/1.69.0@bincrafters/stable#0:d79ce755ed7fe7518e3c432896ea59e870ec81ca#59f062b2cd58fcfa051b986618b28f31",
+    "options": "boost_atomic:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "81"
+    ]
+   },
+   "85": {
+    "pref": "boost_phoenix/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "64",
+     "33",
+     "39",
+     "66",
+     "56",
+     "54",
+     "35",
+     "41",
+     "86",
+     "79",
+     "49",
+     "43",
+     "55"
+    ]
+   },
+   "86": {
+    "pref": "boost_proto/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "39",
+     "56",
+     "54",
+     "41",
+     "79",
+     "42",
+     "43",
+     "52",
+     "55"
+    ]
+   },
+   "87": {
+    "pref": "boost_pool/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "44",
+     "51",
+     "43",
+     "34"
+    ]
+   },
+   "88": {
+    "pref": "boost_tokenizer/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "33",
+     "46",
+     "54",
+     "51",
+     "43"
+    ]
+   },
+   "89": {
+    "pref": "boost_tti/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "33",
+     "53",
+     "54",
+     "41",
+     "43"
+    ]
+   },
+   "90": {
+    "pref": "boost_variant/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": [
+     "37",
+     "64",
+     "33",
+     "38",
+     "39",
+     "40",
+     "44",
+     "50",
+     "54",
+     "41",
+     "42",
+     "51",
+     "67",
+     "43",
+     "55"
+    ]
+   },
+   "91": {
+    "pref": "lzma/5.2.4@bincrafters/stable#0:f74366f76f700cc6e991285892ad7a23c30e6d47#6d961a0ad507f3654d7604d0286da9dc",
+    "options": "fPIC=True\nshared=False"
+   },
+   "92": {
+    "pref": "zstd/1.3.5@bincrafters/stable#0:f74366f76f700cc6e991285892ad7a23c30e6d47#98d4e2675ea4081507a28100534897fe",
+    "options": "fPIC=True\nshared=False"
    }
   }
  },
